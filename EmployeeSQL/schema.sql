@@ -1,3 +1,25 @@
+-- Departments Table Schema
+CREATE TABLE Departments (
+    Dept_no CHAR(4),
+    Dept_name VARCHAR,
+    PRIMARY KEY (Dept_no)
+);
+
+-- Check data import
+SELECT *
+FROM Departments;
+
+-- Titles Table Schema
+CREATE TABLE Titles (
+    Title_id CHAR(5),
+    Title VARCHAR NOT NULL,
+    PRIMARY KEY (Title_id)
+);
+
+-- Check data import
+SELECT *
+FROM Titles;
+
 -- Employees Table Schema
 CREATE TABLE Employees (
     Emp_no INT,
@@ -15,16 +37,16 @@ CREATE TABLE Employees (
 SELECT *
 FROM Employees;
 
--- Departments Table Schema
-CREATE TABLE Departments (
-    Dept_no CHAR(4),
-    Dept_name VARCHAR,
-    PRIMARY KEY (Dept_no)
+-- Salaries Table Schema
+CREATE TABLE Salaries (
+    Emp_no INT,
+    Salary INT NOT NULL,
+    FOREIGN KEY (Emp_no) REFERENCES Employees(Emp_no)
 );
 
 -- Check data import
 SELECT *
-FROM Departments;
+FROM Salaries;
 
 -- Department Employees Table Schema
 CREATE TABLE Department_Employees (
@@ -49,25 +71,3 @@ CREATE TABLE Department_Manager (
 -- Check data import
 SELECT *
 FROM Department_Manager;
-
--- Salaries Table Schema
-CREATE TABLE Salaries (
-    Emp_no INT,
-    Salary INT NOT NULL,
-    FOREIGN KEY (Emp_no) REFERENCES Employees(Emp_no)
-);
-
--- Check data import
-SELECT *
-FROM Salaries;
-
--- Titles Table Schema
-CREATE TABLE Titles (
-    Title_id CHAR(5),
-    Title VARCHAR NOT NULL,
-    PRIMARY KEY (Title_id)
-);
-
--- Check data import
-SELECT *
-FROM Titles;

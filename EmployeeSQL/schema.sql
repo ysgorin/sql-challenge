@@ -23,7 +23,7 @@ CREATE TABLE Departments (
 SELECT *
 FROM Departments;
 
--- Department Employees Table Scheme
+-- Department Employees Table Schema
 CREATE TABLE Department_Employees (
     Emp_no INT,
     Dept_no VARCHAR
@@ -33,4 +33,12 @@ CREATE TABLE Department_Employees (
 SELECT *
 FROM Department_Employees;
 
+-- Department Manager Table Schema
+CREATE TABLE Department_Manager (
+    Dept_no VARCHAR,
+    Emp_no INT
+);
 
+-- Check data import
+SELECT *
+FROM Department_Manager;

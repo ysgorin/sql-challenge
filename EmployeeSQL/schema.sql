@@ -1,7 +1,7 @@
 -- Employees Table Schema
 CREATE TABLE Employees (
     Emp_no INT,
-    Emp_title_id VARCHAR,
+    Emp_title_id CHAR(5),
     Birth_date VARCHAR,
     First_name VARCHAR,
     Last_name VARCHAR,

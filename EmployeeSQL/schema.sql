@@ -2,11 +2,11 @@
 CREATE TABLE Employees (
     Emp_no INT,
     Emp_title_id CHAR(5),
-    Birth_date VARCHAR,
-    First_name VARCHAR,
-    Last_name VARCHAR,
+    Birth_date VARCHAR NOT NULL,
+    First_name VARCHAR NOT NULL,
+    Last_name VARCHAR NOT NULL,
     Sex CHAR(1),
-    Hire_date VARCHAR,
+    Hire_date VARCHAR NOT NULL,
     PRIMARY KEY (Emp_no),
     FOREIGN KEY (Emp_title_id) REFERENCES Titles(Title_id)
 );
@@ -17,8 +17,9 @@ FROM Employees;
 
 -- Departments Table Schema
 CREATE TABLE Departments (
-    Dept_no VARCHAR,
-    Dept_name VARCHAR
+    Dept_no CHAR(4),
+    Dept_name VARCHAR,
+    PRIMARY KEY (Dept_no)
 );
 
 -- Check data import

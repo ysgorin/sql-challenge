@@ -29,7 +29,9 @@ FROM Departments;
 -- Department Employees Table Schema
 CREATE TABLE Department_Employees (
     Emp_no INT,
-    Dept_no VARCHAR
+    Dept_no CHAR(4),
+    FOREIGN KEY (Emp_no) REFERENCES Employees(Emp_no),
+    FOREIGN KEY (Dept_no) REFERENCES Departments(Dept_no)
 );
 
 -- Check data import

@@ -6,7 +6,9 @@ CREATE TABLE Employees (
     First_name VARCHAR,
     Last_name VARCHAR,
     Sex CHAR(1),
-    Hire_date VARCHAR
+    Hire_date VARCHAR,
+    PRIMARY KEY (Emp_no),
+    FOREIGN KEY (Emp_title_id) REFERENCES Titles(Title_id)
 );
 
 -- Check data import

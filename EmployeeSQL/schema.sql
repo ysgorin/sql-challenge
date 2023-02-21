@@ -53,7 +53,8 @@ FROM Department_Manager;
 -- Salaries Table Schema
 CREATE TABLE Salaries (
     Emp_no INT,
-    Salary INT
+    Salary INT NOT NULL,
+    FOREIGN KEY (Emp_no) REFERENCES Employees(Emp_no)
 );
 
 -- Check data import

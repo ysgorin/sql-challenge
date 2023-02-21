@@ -1,7 +1,7 @@
 -- Departments Table Schema
 CREATE TABLE Departments (
     Dept_no CHAR(4),
-    Dept_name VARCHAR,
+    Dept_name VARCHAR NOT NULL,
     PRIMARY KEY (Dept_no)
 );
 

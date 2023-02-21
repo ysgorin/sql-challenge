@@ -42,3 +42,23 @@ CREATE TABLE Department_Manager (
 -- Check data import
 SELECT *
 FROM Department_Manager;
+
+-- Salaries Table Schema
+CREATE TABLE Salaries (
+    Emp_no INT,
+    Salary INT
+);
+
+-- Check data import
+SELECT *
+FROM Salaries;
+
+-- Titles Table Schema
+CREATE TABLE Titles (
+    Title_id VARCHAR,
+    Title VARCHAR
+);
+
+-- Check data import
+SELECT *
+FROM Titles;

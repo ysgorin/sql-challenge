@@ -25,5 +25,12 @@ FROM Departments;
 
 -- Department Employees Table Scheme
 CREATE TABLE Department_Employees (
-
+    Emp_no INT
+    Dept_no VARCHAR
 );
+
+-- Check data import
+SELECT *
+FROM Department_Employees;
+
+

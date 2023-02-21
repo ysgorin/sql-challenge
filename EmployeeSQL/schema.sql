@@ -13,3 +13,13 @@ CREATE TABLE Employees (
 SELECT *
 FROM Employees
 
+-- Departments Table Schema
+CREATE TABLE Departments (
+    Dept_no VARCHAR
+    Dept_name VARCHAR
+)
+
+-- Check data import
+SELECT *
+FROM Departments
+

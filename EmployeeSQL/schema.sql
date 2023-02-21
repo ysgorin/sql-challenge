@@ -63,8 +63,9 @@ FROM Salaries;
 
 -- Titles Table Schema
 CREATE TABLE Titles (
-    Title_id VARCHAR,
-    Title VARCHAR
+    Title_id CHAR(5),
+    Title VARCHAR NOT NULL,
+    PRIMARY KEY (Title_id)
 );
 
 -- Check data import

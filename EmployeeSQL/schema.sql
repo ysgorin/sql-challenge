@@ -15,7 +15,7 @@ FROM Employees;
 
 -- Departments Table Schema
 CREATE TABLE Departments (
-    Dept_no VARCHAR
+    Dept_no VARCHAR,
     Dept_name VARCHAR
 );
 
@@ -25,7 +25,7 @@ FROM Departments;
 
 -- Department Employees Table Scheme
 CREATE TABLE Department_Employees (
-    Emp_no INT
+    Emp_no INT,
     Dept_no VARCHAR
 );
 

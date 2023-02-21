@@ -40,8 +40,10 @@ FROM Department_Employees;
 
 -- Department Manager Table Schema
 CREATE TABLE Department_Manager (
-    Dept_no VARCHAR,
-    Emp_no INT
+    Dept_no CHAR(4),
+    Emp_no INT,
+    FOREIGN KEY (Dept_no) REFERENCES Departments(Dept_no),
+    FOREIGN KEY (Emp_no) REFERENCES Employees(Emp_no)
 );
 
 -- Check data import

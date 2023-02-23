@@ -24,11 +24,11 @@ FROM Titles;
 CREATE TABLE Employees (
     Emp_no INT,
     Emp_title_id CHAR(5),
-    Birth_date VARCHAR NOT NULL,
+    Birth_date VARCHAR(10) NOT NULL,
     First_name VARCHAR NOT NULL,
     Last_name VARCHAR NOT NULL,
     Sex CHAR(1) NOT NULL,
-    Hire_date VARCHAR NOT NULL,
+    Hire_date VARCHAR(10) NOT NULL,
     PRIMARY KEY (Emp_no),
     FOREIGN KEY (Emp_title_id) REFERENCES Titles(Title_id)
 );

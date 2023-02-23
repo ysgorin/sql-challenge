@@ -11,7 +11,7 @@ The following ERD describes the relationship between the CSV files:
 ![employee_db_erd](EmployeeSQL/employee_db_erd.png)
 
 ##### Data Engineering
-I created a table schema [this schema](EmployeeSQL/schema.sql) for each of the six CSV files:
+I created a [table schema](EmployeeSQL/schema.sql) for each of the six CSV files:
 * departments.csv 
 * dept_emp.csv
 * dept_manager.csv

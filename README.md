@@ -1,7 +1,7 @@
 ### Pewlett Hackard Employee History Project
 
 I work as a data engineer for Pewlett Hackard (a fictional company). I have
-been taksed with doing a research project about people whom the company
+been tasked with doing a research project about people whom the company
 employed during the 1980s and 1990s. All that remains of the employee database
 from that time are six CSV files.
 

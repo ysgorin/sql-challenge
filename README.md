@@ -34,9 +34,18 @@ were hired in 1986.
 
 ![query2](Screenshots/query2.png)
 
+<br />
+<br />
+
 3. List the manager of each department along with their department
 number, department name, employee number, last name, and first
 name.
+
+![query3](Screenshots/query3.png)
+
+<br />
+<br />
+
 4. List the department number for each employee along with
 that employee’s employee number, last name, first name, and
 department name.

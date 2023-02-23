@@ -17,7 +17,12 @@ WHERE Hire_date LIKE '%1986';
 -- number, department name, employee number, last name, and first
 -- name.
 
-SELECT Departments.Dept_no, Departments.Dept_name, Employees.Emp_no, Employees.Last_name, Employees.First_name
+SELECT dm.Dept_no, d.Dept_name, dm.Emp_no, e.Last_name, e.First_name
+FROM Department_Manager as dm
+INNER JOIN Departments as d ON
+d.Dept_no=dm.Dept_no
+INNER JOIN Employees as e ON
+e.Emp_no=dm.Emp_no;
 
 -- 4. List the department number for each employee along with
 -- that employee’s employee number, last name, first name, and

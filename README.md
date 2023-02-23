@@ -23,8 +23,14 @@ I created a table schema for each of the six CSV files:
 I was tasked with the following queries:
 1. List the employee number, last name, first name, sex, and salary of
 each employee.
+
+![query1](Screenshots/query1.png)
+
 2. List the first name, last name, and hire date for the employees who
 were hired in 1986.
+
+![query2](Screenshots/query2.png)
+
 3. List the manager of each department along with their department
 number, department name, employee number, last name, and first
 name.

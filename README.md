@@ -26,6 +26,8 @@ each employee.
 
 ![query1](Screenshots/query1.png)
 
+
+
 2. List the first name, last name, and hire date for the employees who
 were hired in 1986.
 

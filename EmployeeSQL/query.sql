@@ -17,14 +17,12 @@ WHERE Hire_date LIKE '%1986';
 -- number, department name, employee number, last name, and first
 -- name.
 
-SELECT dm.Emp_no, e.Last_name, e.First_name, t.title, dm.Dept_no, d.Dept_name
+SELECT dm.Emp_no, e.Last_name, e.First_name, dm.Dept_no, d.Dept_name
 FROM Department_Manager AS dm
 INNER JOIN Departments AS d ON
 d.Dept_no=dm.Dept_no
 INNER JOIN Employees AS e ON
-e.Emp_no=dm.Emp_no
-INNER JOIN Titles AS t ON
-t.Title_id=e.Emp_title_id;
+e.Emp_no=dm.Emp_no;
 
 -- 4. List the department number for each employee along with
 -- that employee’s employee number, last name, first name, and
@@ -47,7 +45,7 @@ WHERE First_name='Hercules' AND Last_name LIKE 'B%';
 -- 6. List each employee in the Sales department, including their
 -- employee number, last name, and first name.
 
-SELECT de.Emp_no, e.Last_name, e.First_name, de.Dept_no, d.Dept_name
+SELECT de.Emp_no, e.Last_name, e.First_name
 FROM Department_Employees AS de
 INNER JOIN Departments AS d ON
 d.Dept_no=de.Dept_no
@@ -58,6 +56,14 @@ WHERE d.Dept_name='Sales';
 -- 7. List each employee in the Sales and Development departments,
 -- including their employee number, last name, first name, and
 -- department name.
+
+SELECT de.Emp_no, e.Last_name, e.First_name, d.Dept_name
+FROM Department_Employees AS de
+INNER JOIN Departments AS d ON
+d.Dept_no=de.Dept_no
+INNER JOIN Employees AS e ON
+e.Emp_no=de.Emp_no
+WHERE d.Dept_name='Sales' OR d.Dept_name='Development';
 
 -- 8. List the frequency counts, in descending order, of all the employee
 -- last names (that is, how many employees share each last name).

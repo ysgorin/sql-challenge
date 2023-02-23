@@ -25,7 +25,11 @@ I was tasked with the following queries:
 each employee.
 
 ![query1](Screenshots/query1.png)
-&nbsp; &nbsp; 
+
+<br />
+<br />
+<br />
+
 2. List the first name, last name, and hire date for the employees who
 were hired in 1986.
 

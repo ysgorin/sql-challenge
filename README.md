@@ -6,7 +6,7 @@ employed during the 1980s and 1990s. All that remains of the employee database
 from that time are six CSV files.
 
 ##### Data Modeling
-The following ERD describes the relationship between the CSV files:
+The following [ERD](EmployeeSQL/employee_db_erd.png) describes the relationship between the CSV files:
 
 ![employee_db_erd](EmployeeSQL/employee_db_erd.png)
 
@@ -20,7 +20,7 @@ I created a [table schema](EmployeeSQL/schema.sql) for each of the six CSV files
 * titles.csv
 
 ##### Data Analysis
-I was tasked with the following queries:
+I was tasked with the following [queries](EmployeeSQL/query.sql):
 1. List the employee number, last name, first name, sex, and salary of
 each employee.
 

@@ -40,6 +40,10 @@ e.Emp_no=de.Emp_no;
 -- 5. List first name, last name, and sex of each employee whose first
 -- name is Hercules and whose last name begins with the letter B.
 
+SELECT First_name, Last_name, Sex
+FROM Employees
+WHERE First_name='Hercules' AND Last_name LIKE 'B%';
+
 -- 6. List each employee in the Sales department, including their
 -- employee number, last name, and first name.
 

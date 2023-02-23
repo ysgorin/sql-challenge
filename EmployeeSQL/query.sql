@@ -11,7 +11,7 @@ s.Emp_no=e.Emp_no;
 
 SELECT First_name, Last_name, Hire_date
 FROM Employees
-WHERE Hire_date Like '%1986';
+WHERE Hire_date LIKE '%1986';
 
 -- 3. List the manager of each department along with their department
 -- number, department name, employee number, last name, and first

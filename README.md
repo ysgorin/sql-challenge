@@ -49,6 +49,12 @@ name.
 4. List the department number for each employee along with
 that employee’s employee number, last name, first name, and
 department name.
+
+![query4](Screenshots/query4.png)
+
+<br />
+<br />
+
 5. List first name, last name, and sex of each employee whose first
 name is Hercules and whose last name begins with the letter B.
 6. List each employee in the Sales department, including their

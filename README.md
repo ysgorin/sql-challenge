@@ -21,13 +21,13 @@ I created a table schema for each of the six CSV files:
 
 ##### Data Analysis
 I was tasked with the following queries:
-1. List the employee number, last name, first name, sex, and salary of
-each employee.
+###### 1. List the employee number, last name, first name, sex, and salary of
+###### each employee.
 
 ![query1](Screenshots/query1.png)
 
-2. List the first name, last name, and hire date for the employees who
-were hired in 1986.
+###### 2. List the first name, last name, and hire date for the employees who
+###### were hired in 1986.
 
 ![query2](Screenshots/query2.png)
 

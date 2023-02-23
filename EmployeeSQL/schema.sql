@@ -27,7 +27,7 @@ CREATE TABLE Employees (
     Birth_date VARCHAR NOT NULL,
     First_name VARCHAR NOT NULL,
     Last_name VARCHAR NOT NULL,
-    Sex CHAR(1),
+    Sex CHAR(1) NOT NULL,
     Hire_date VARCHAR NOT NULL,
     PRIMARY KEY (Emp_no),
     FOREIGN KEY (Emp_title_id) REFERENCES Titles(Title_id)

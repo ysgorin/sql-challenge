@@ -41,6 +41,7 @@ FROM Employees;
 CREATE TABLE Salaries (
     Emp_no INT,
     Salary INT NOT NULL,
+    PRIMARY KEY (Emp_no, Salary),
     FOREIGN KEY (Emp_no) REFERENCES Employees(Emp_no)
 );
 
@@ -52,6 +53,7 @@ FROM Salaries;
 CREATE TABLE Department_Employees (
     Emp_no INT,
     Dept_no CHAR(4),
+    PRIMARY KEY (Emp_no, Dept_no),
     FOREIGN KEY (Emp_no) REFERENCES Employees(Emp_no),
     FOREIGN KEY (Dept_no) REFERENCES Departments(Dept_no)
 );
@@ -64,6 +66,7 @@ FROM Department_Employees;
 CREATE TABLE Department_Manager (
     Dept_no CHAR(4),
     Emp_no INT,
+    PRIMARY KEY (Dept_no, Emp_no),
     FOREIGN KEY (Dept_no) REFERENCES Departments(Dept_no),
     FOREIGN KEY (Emp_no) REFERENCES Employees(Emp_no)
 );
